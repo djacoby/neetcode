@@ -3,7 +3,7 @@ Valid Anagram
 
 Leetcode 242 - https://leetcode.com/problems/valid-anagram/
 
-Time Complexity - O(n)
+Time Complexity - O(n + m)
 Space Complexity - O(n)
 
 """
