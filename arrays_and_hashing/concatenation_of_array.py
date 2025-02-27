@@ -7,9 +7,10 @@ Time Complexity - O(n)
 Space Complexity - O(n)
 
 """
+from typing import List
 from utils import LeetTester
 
-def get_concatenation(nums):
+def get_concatenation(nums: List[int]) -> List[int]:
     length = len(nums)
     result = [0] * (2 * length)  # Initialize an array of size 2 * length
 
