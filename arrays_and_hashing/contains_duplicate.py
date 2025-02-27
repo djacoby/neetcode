@@ -15,6 +15,7 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
          return len(set(nums)) < len(nums)
 
+# Example test cases
 tester = LeetTester()
 solution = Solution()
 
