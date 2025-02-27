@@ -16,10 +16,10 @@ class Solution:
          return len(set(nums)) < len(nums)
 
 tester = LeetTester()
-sol = Solution()
+solution = Solution()
 
-tester.test(True, sol.containsDuplicate([1, 2, 3, 1]))
-tester.test(False, sol.containsDuplicate([1, 2, 3, 4]))
-tester.test(True, sol.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
+tester.test(True, solution.containsDuplicate([1, 2, 3, 1]))
+tester.test(False, solution.containsDuplicate([1, 2, 3, 4]))
+tester.test(True, solution.containsDuplicate([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]))
 
 tester.summary()

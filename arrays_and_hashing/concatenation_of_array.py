@@ -23,9 +23,9 @@ class Solution:
 
 # Example test cases
 tester = LeetTester()
-sol = Solution()
+solution = Solution()
 
-tester.test([1, 2, 1, 1, 2, 1], sol.get_concatenation([1, 2, 1]))
-tester.test([1, 3, 2, 1, 1, 3, 2, 1], sol.get_concatenation([1, 3, 2, 1]))
+tester.test([1, 2, 1, 1, 2, 1], solution.getConcatenation([1, 2, 1]))
+tester.test([1, 3, 2, 1, 1, 3, 2, 1], solution.getConcatenation([1, 3, 2, 1]))
 
 tester.summary()
