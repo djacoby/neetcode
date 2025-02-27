@@ -7,21 +7,25 @@ Time Complexity - O(n)
 Space Complexity - O(n)
 
 """
+
 from typing import List
 from utils import LeetTester
 
-def get_concatenation(nums: List[int]) -> List[int]:
-    length = len(nums)
-    result = [0] * (2 * length)  # Initialize an array of size 2 * length
+class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        length = len(nums)
+        result = [0] * (2 * length)  # Initialize an array of size 2 * length
 
-    for i in range(length):
-        result[i] = result[i + length] = nums[i]
+        for i in range(length):
+            result[i] = result[i + length] = nums[i]
 
-    return result
+        return result
 
+# Example test cases
 tester = LeetTester()
+sol = Solution()
 
-tester.test([1, 2, 1, 1, 2, 1], get_concatenation([1, 2, 1]), '[1, 2, 1]')
-tester.test([1, 3, 2, 1, 1, 3, 2, 1], get_concatenation([1, 3, 2, 1]), '[1, 3, 2, 1]')
+tester.test([1, 2, 1, 1, 2, 1], sol.get_concatenation([1, 2, 1]))
+tester.test([1, 3, 2, 1, 1, 3, 2, 1], sol.get_concatenation([1, 3, 2, 1]))
 
 tester.summary()
