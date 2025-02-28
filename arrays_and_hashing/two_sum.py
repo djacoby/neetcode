@@ -6,6 +6,15 @@ Leetcode 1 - https://leetcode.com/problems/two-sum/
 Time Complexity - 0(n) 
 Space Complexity - 0(n) 
 
+Solution: Hash Map
+
+Explanation:
+
+- Create a dictionary to store the value and index of the numbers in the list
+- Iterate through the list and calculate the difference between the target and the current number
+- If the difference is in the dictionary, return the index of the difference and the current index
+- Otherwise, add the current number and index to the dictionary
+
 """
 
 from typing import List

@@ -6,6 +6,14 @@ Leetcode 217 - https://leetcode.com/problems/contains-duplicate/
 Time Complexity - O(n)
 Space Complexity - O(n)
 
+Solution: Hash Set Length
+
+Explanation:
+
+- Convert the list to a set and compare the length of the set to the length of the list
+- If the length of the set is less than the length of the list, return True
+- Otherwise, return False
+
 """
 
 from typing import List

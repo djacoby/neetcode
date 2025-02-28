@@ -6,6 +6,13 @@ Leetcode 1929 - https://leetcode.com/problems/concatenation-of-array/
 Time Complexity - O(n)
 Space Complexity - O(n)
 
+Solution: Double the Array
+
+Explanation:
+- Initialize an array of size 2 * length
+- Iterate through the list and set the value of the current index and the current index + length to the current number
+- Return the result
+
 """
 
 from typing import List

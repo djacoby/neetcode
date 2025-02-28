@@ -6,6 +6,15 @@ Leetcode 242 - https://leetcode.com/problems/valid-anagram/
 Time Complexity - O(n + m)
 Space Complexity - O(n)
 
+Solution: Frequency Array
+
+Explanation:
+- Create a frequency array of size 26 to store the frequency of each letter in the alphabet
+- Iterate through the first string and increment the frequency of each letter
+- Iterate through the second string and decrement the frequency of each letter
+- If the frequency array contains any non-zero values, return False
+- Otherwise, return True
+
 """
 
 from utils import LeetTester
