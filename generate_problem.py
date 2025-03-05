@@ -29,6 +29,11 @@ def generate_problem_file(path):
     full_path = os.path.join(os.path.dirname(__file__), folder_name)
     full_file_path = os.path.join(full_path, f"{problem_name}.py")
     
+    # Check if file already exists
+    if os.path.exists(full_file_path):
+        print(f"Error: File '{full_file_path}' already exists. Please choose a different name or delete the existing file.")
+        return
+    
     # Create directory if it doesn't exist
     if folder_name and not os.path.exists(full_path):
         os.makedirs(full_path)
