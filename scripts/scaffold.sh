@@ -12,7 +12,12 @@ PROBLEM_NAME="$2"
 DIR="$PARENT_DIR/$PROBLEM_NAME"
 
 # Convert kebab-case to camelCase: contains-duplicate -> containsDuplicate
-FUNCTION_NAME=$(echo "$PROBLEM_NAME" | sed -E 's/(^|-)([a-z])/\U\2/g' | sed 's/^./\L&/')
+IFS='-' read -ra PARTS <<< "$PROBLEM_NAME"
+FUNCTION_NAME="${PARTS[0]}"
+for part in "${PARTS[@]:1}"; do
+  first=$(echo "${part:0:1}" | tr 'a-z' 'A-Z')
+  FUNCTION_NAME+="${first}${part:1}"
+done
 
 mkdir -p "$DIR"
 
