@@ -5,7 +5,8 @@
   "scripts": {
     "solve": "tsx",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "problem:scaffold": "bash scripts/scaffold.sh"
   },
   "keywords": [],
   "author": "",

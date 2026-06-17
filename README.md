@@ -50,6 +50,18 @@ src/01-arrays-and-hashing/contains-duplicate/
 └── index.spec.ts
 ```
 
+## Creating a New Problem
+
+```sh
+pnpm problem:scaffold <parent-dir> <problem-name>
+```
+
+For example:
+
+```sh
+pnpm problem:scaffold src/01-arrays-and-hashing contains-duplicate
+```
+
 ## Problem Groups
 
 | # | Folder | Topic |
