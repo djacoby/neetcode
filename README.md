@@ -11,13 +11,43 @@ pnpm install
 ## Running Solutions
 
 ```sh
-pnpm solve src/<problem-folder>/<file>.ts
+pnpm solve src/<group>/<problem>/index.ts
 ```
 
 For example:
 
 ```sh
-pnpm solve src/01-arrays-and-hashing/contains-duplicate.ts
+pnpm solve src/01-arrays-and-hashing/contains-duplicate/index.ts
+```
+
+## Testing
+
+Run all tests:
+
+```sh
+pnpm test
+```
+
+Run tests in watch mode:
+
+```sh
+pnpm test:watch
+```
+
+Run a specific problem's tests:
+
+```sh
+pnpm test src/01-arrays-and-hashing/contains-duplicate
+```
+
+## Structure
+
+Each problem has its own folder containing an implementation and a spec:
+
+```
+src/01-arrays-and-hashing/contains-duplicate/
+├── index.ts
+└── index.spec.ts
 ```
 
 ## Problem Groups
