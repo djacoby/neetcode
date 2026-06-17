@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "solve": "tsx",
-    "test": "vitest run",
-    "test:watch": "vitest",
+    "solve": "vitest run --no-file-parallelism",
     "problem:scaffold": "bash scripts/scaffold.sh"
   },
   "keywords": [],

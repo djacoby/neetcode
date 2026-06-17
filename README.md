@@ -10,35 +10,27 @@ pnpm install
 
 ## Running Solutions
 
+Solutions are run through vitest. The spec file (`index.spec.ts`) drives the solution (`index.ts`). There are three ways to run them:
+
+**1. CLI**
+
 ```sh
-pnpm solve src/<group>/<problem>/index.ts
+pnpm solve src/<group>/<problem>
 ```
 
 For example:
 
 ```sh
-pnpm solve src/01-arrays-and-hashing/contains-duplicate/index.ts
+pnpm solve src/01-arrays-and-hashing/contains-duplicate
 ```
 
-## Testing
+**2. Debugger (F5)**
 
-Run all tests:
+Open a spec file in VS Code and hit F5 (or **Run > Start Debugging**). Breakpoints work in both the spec and solution files.
 
-```sh
-pnpm test
-```
+**3. Vitest extension**
 
-Run tests in watch mode:
-
-```sh
-pnpm test:watch
-```
-
-Run a specific problem's tests:
-
-```sh
-pnpm test src/01-arrays-and-hashing/contains-duplicate
-```
+Install the [Vitest extension](https://marketplace.visualstudio.com/items?itemName=vitest.explorer) (already recommended in this workspace) and click the play button next to any test in the spec file to run it directly.
 
 ## Structure
 
